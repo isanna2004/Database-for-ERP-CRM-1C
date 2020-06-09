@@ -1,0 +1,22 @@
+{% extends "templates/main.njk" %}
+
+{% set title = 'Main Page' %}
+{% set bodyClass = 'main-page' %}
+
+{% block content %}
+				{% include "blocks/header.njk" %}
+				{% include "blocks/main_section.njk" %}
+				{% include "blocks/our_results.njk" %}
+				{% include "blocks/our_systems.njk" %}
+				{% include "blocks/main_reasons.njk" %}
+				{% include "blocks/steps.njk" %}
+				{% include "blocks/section6.njk" %}
+				{% include "blocks/footer.njk" %}
+{% endblock %}
+
+
+				<script src="static/js/libs.min.js"></script>
+				<script src="static/js/main.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

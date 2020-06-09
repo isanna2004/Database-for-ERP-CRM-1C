@@ -1,0 +1,81 @@
+.steps {
+    .container {
+        position: relative;
+        .col-md-2 {
+            min-width: 190px;
+        }
+        .item_features {
+            min-width: 200px;
+            height: 100%;
+            background-color: unset;
+            &:hover {
+                background-color: white;
+                span {
+                    background-color: rgb(241, 86, 24);
+                }
+                .thumbnail {
+                    filter: saturate(0) contrast(100) invert(100);
+                }
+            }
+        }
+    }
+    .thumbnail {
+        width: 40px;
+        height: 40px;
+    }
+    span {
+        display: block;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        background-color: white;
+        margin: 10px auto;
+        text-align: center;
+        padding: 25px 0;
+        transition: all 0.4s;
+    }
+    .subtitle {
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .description {
+        font-weight: 100;
+        text-align: center;
+        padding: 0;
+    }
+    .hide {
+        display: none;
+        position: absolute;
+        width: 84%;
+        bottom: -115px;
+        padding: 10px;
+        left: 110px;
+        .col-12 {
+            background-color: white;
+            @extend %col-hover;
+        }
+    }
+    .hide-mobile {
+        display: none;
+        .col {
+            @extend %col-hover;
+        }
+    }
+}
+
+.hide-mobile,
+.hide {
+    .description {
+        font-size: 14px;
+        text-align: left;
+    }
+    .subtitle {
+        position: relative;
+        z-index: 10;
+        text-align: left;
+        padding-left: 0;
+        color: grey;
+    }
+}

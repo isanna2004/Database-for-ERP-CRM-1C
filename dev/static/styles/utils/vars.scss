@@ -1,0 +1,22 @@
+        $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl:1500px);
+        $container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl:1440px);
+        main-color {
+            color: #fe5c2e;
+        }
+        
+        %col-hover {
+            &:hover .subtitle {
+                color: black;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    top: 15px;
+                    left: 0;
+                    background: rgb(241, 86, 24);
+                    border-radius: 50%;
+                    opacity: 0.5;
+                }
+            }
+        }

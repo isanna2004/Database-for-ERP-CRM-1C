@@ -1,0 +1,31 @@
+{
+    "name": "nunjucks_sass_gulp4_start_template",
+    "version": "1.0.0",
+    "description": "Start template for html code",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/isanna2004/gulp_nunjucks.git"
+    },
+    "author": "isanna2004",
+    "license": "ISC",
+    "homepage": "",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "del": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-nunjucks": "^5.0.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.0.2",
+        "node-sass": "^4.13.1"
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.0",
+        "font-awesome-sass": "^4.7.0",
+        "jquery": "^3.5.1"
+    }
+}
