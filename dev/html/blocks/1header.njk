@@ -1,0 +1,30 @@
+<header>
+    <div class="container">
+        <div class="row align-items-center flex-wrap">
+            <div class="col-6"></div>
+            <div class="col-6 col-md-2 text-nowrap d-none d-lg-block">
+                <a href="#" class="mail text-dark">info@it-rules.ru</a>
+            </div>
+            <div class="col-12 col-md-2 text-nowrap text-right">
+                <a href="#" class="phone text-dark font-weight-bold">+7 (495) 380-37-74</a>
+            </div>
+            <div class="col-2 d-none d-lg-block">{% include "templates/socials.njk" %}</div>
+
+            <div class="row d-lg-none d-flex menu-mobile flex-wrap justify-content-center align-items-center mt-3 px-3">
+                <div class="col-2">
+                    <a class="menu_buttons" href="#"><img src="..\..\static\images\menu-mobile.png"></a>
+                </div>
+                <div class="col-4">
+                    {% include "templates/socials.njk" %}</div>
+                <div class="col-4">
+                    <a href="#" class="mail text-dark text-nowrap">info@it-rules.ru</a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="#"><img src="..\..\static\images\lupa.png"></a>
+                </div>
+                <div class="col-12 hide-menu">{% include "blocks/navigation.njk" %}</div>
+            </div>
+        </div>
+    </div>
+
+</header>

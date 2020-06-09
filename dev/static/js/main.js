@@ -44,4 +44,9 @@ $(document).ready(function() {
         $('.active').removeClass('active');
     });
 
+
+
+    $('.menu_buttons').click(function() {
+        $('.hide-menu').slideToggle(500)
+    })
 })
