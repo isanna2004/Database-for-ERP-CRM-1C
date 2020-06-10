@@ -1,99 +1,99 @@
-@import "utils/vars";
-@import "utils/fonts";
-@import "utils/libs";
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Museo Sans Cyrl 300';
-}
-
-section {
-    background: #fafafa;
-    padding: 30px 0;
-    text-align: center;
-}
-
-@media (max-width: 1056px) {
-    section {
-        padding: 20px;
-    }
-    .description {
-        font-size: 14px;
-    }
-    .subtitle {
-        padding: 0;
-    }
-    .title {
-        font-size: 26px;
-        padding: 0;
-    }
-}
-
-.title {
-    font-size: 43px;
-    padding: 20px;
-}
-
-.subtitle {
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 20px;
-    font-weight: 900;
-}
-
-.description {
-    font-size: 16px;
-    padding: 20px;
-}
-
-.logo {
-    margin: 10px;
-}
-
-.descr {
-    font-size: 20px;
-}
-
-.images {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.shadowed {
-    padding: 40px;
-}
-
-.main_button {
-    width: 270px;
-    background-color: #fe5c2e;
-    border: none;
-    color: white;
-}
-
-.thumbnail {
-    height: 40px;
-    width: 100px;
-    filter: grayscale(100%);
-}
-
-.color {
-    filter: grayscale(0%);
-}
-
-@import "blocks/_blocks";
-// Responsive styles
-@import "utils/media";
+        @import "utils/vars";
+        @import "utils/fonts";
+        @import "utils/libs";
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 16px;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Museo Sans Cyrl 300';
+        }
+        
+        section {
+            background: #fafafa;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 1056px) {
+            section {
+                padding: 20px;
+            }
+            .description {
+                font-size: 14px;
+            }
+            .subtitle {
+                padding: 0;
+            }
+            .title {
+                font-size: 26px;
+                padding: 0;
+            }
+        }
+        
+        .title {
+            font-size: 43px;
+            padding: 20px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 20px;
+            font-weight: 900;
+        }
+        
+        .description {
+            font-size: 16px;
+            padding: 20px;
+        }
+        
+        .logo {
+            margin: 10px;
+        }
+        
+        .descr {
+            font-size: 20px;
+        }
+        
+        .images {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .shadowed {
+            padding: 40px;
+        }
+        
+        .main_button {
+            width: 270px;
+            background-color: #fe5c2e;
+            border: none;
+            color: white;
+        }
+        
+        .thumbnail {
+            height: 40px;
+            width: 100px;
+            filter: grayscale(100%);
+        }
+        
+        .color {
+            filter: grayscale(0%);
+        }
+        
+        @import "blocks/_blocks";
+        // Responsive styles
+        @import "utils/media";
