@@ -1,53 +1,54 @@
-    .our_systems {
-        .thumb {
-            height: 20px;
-            width: 60px;
-            filter: grayscale(100%);
-        }
-        .button_links {
-            justify-content: space-between;
-            padding: 20px;
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            .button_style {
-                border: 1px solid black;
-                border-radius: 10px;
-                padding: 20px 30px;
-                color: #333;
-                text-transform: uppercase;
-                font-weight: 700;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-        .list_item img {
-            filter: grayscale(100%) contrast(100%);
-            transition: all 0.3s;
-            &:hover {
-                filter: unset;
-            }
-        }
-        .number {
-            position: absolute;
-            top: 20px;
-            left: 10px;
-            text-align: center;
-            width: 25px;
-            line-height: 25px;
-            border-radius: 50%;
-            color: white;
-            background-color: #333;
-            &:hover {
-                background-color: red;
-            }
-        }
-        @media (max-width: 1056px) {
-            .thumbnail {
-                height: 20px;
-                width: 70px;
-            }
-        }
+.our_systems {
+  position: relative;
+  .thumb {
+    height: 20px;
+    width: 60px;
+    filter: grayscale(100%);
+  }
+  .button_links {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .button_style {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 20px 30px;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover {
+        text-decoration: none;
+      }
     }
+  }
+  .list_item img {
+    filter: grayscale(100%) contrast(100%);
+    transition: all 0.3s;
+    &:hover {
+      filter: unset;
+    }
+  }
+  .number {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    text-align: center;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    color: white;
+    background-color: #333;
+    &:hover {
+      background-color: red;
+    }
+  }
+  @media (max-width: 1056px) {
+    .thumbnail {
+      height: 20px;
+      width: 70px;
+    }
+  }
+}

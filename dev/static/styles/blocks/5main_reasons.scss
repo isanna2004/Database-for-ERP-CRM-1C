@@ -1,4 +1,11 @@
-.main_reasons {
+.main_reasons {     position: relative;
+    .circle{
+         width: 28vw;
+        height: 28vw;
+        border: 6vw solid #f4f4f4;
+        top:-20%;
+        right:0;
+    }
     .description {
         font-size: 14px;
         text-align: center;
