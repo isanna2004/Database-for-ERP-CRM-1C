@@ -23,10 +23,14 @@
         .thumbnail {
           filter: saturate(0) contrast(100) invert(100);
         }
+        .fa-sliders{
+          color:white;
+        }
       }
     }
   }
   .thumbnail {
+    filter: saturate(100%);
     width: 40px;
     height: 40px;
   }
@@ -40,6 +44,11 @@
     text-align: center;
     padding: 25px 0;
     transition: all 0.4s;
+  }
+  .fa-sliders{
+   color:#fe805c;
+   transform: rotate(90deg);
+  font-size: 40px;
   }
   .subtitle {
     font-weight: 700;
