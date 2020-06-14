@@ -1,28 +1,20 @@
 <header>
     <div class="container">
-        <div class="row align-items-center flex-wrap">
-            <div class="col-6"></div>
-            <div class="col-6 col-md-2 text-nowrap d-none d-lg-block">
+        <div class="row align-items-center flex-wrap justify-content-center">
+            <div class="col-2 order-2  d-block d-md-none">
+                <a class="menu_buttons" href="#"><img src="../../static/images/menu-mobile.png" alt="menu"></a>
+            </div>
+            <div class="hide-menu order-6 d-md-none">{% include "blocks/navigation.njk" %}</div>
+            <div class="col-4 offset-lg-6 col-md-2 text-nowrap order-md-1 order-4">
                 <a href="#" class="mail text-dark">info@it-rules.ru</a>
             </div>
-            <div class="col-12 col-md-2 text-nowrap text-right">
-                <a href="#" class="phone text-dark font-weight-bold">+7 (495) 380-37-74</a>
+            <div class="col-12 col-md-2 text-nowrap order-md-2 order-1 text-right text-md-center">
+                <a href="#" class="phone text-dark">+7 (495) 380-37-74</a>
             </div>
-            <div class="col-2 d-none d-lg-block">{% include "templates/socials.njk" %}</div>
+            <div class="col-4 col-lg-2 text-nowrap order-md-3 order-3">{% include "templates/socials.njk" %}</div>
 
-            <div class="row d-lg-none d-flex menu-mobile flex-wrap justify-content-center align-items-center mt-3 px-3">
-                <div class="col-2">
-                    <a class="menu_buttons" href="#"><img src="..\..\static\images\menu-mobile.png"></a>
-                </div>
-                <div class="col-4">
-                    {% include "templates/socials.njk" %}</div>
-                <div class="col-4">
-                    <a href="#" class="mail text-dark text-nowrap">info@it-rules.ru</a>
-                </div>
-                <div class="col-2">
-                    <a class="nav-link" href="#"><img src="..\..\static\images\lupa.png"></a>
-                </div>
-                <div class="col-12 hide-menu">{% include "blocks/navigation.njk" %}</div>
+            <div class="col-2 order-5 d-block d-md-none">
+                <a class="nav-link" href="#"><img src="../../static/images/lupa.png" alt="loupe"></a>
             </div>
         </div>
     </div>

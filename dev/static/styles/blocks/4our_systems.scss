@@ -6,7 +6,7 @@
     filter: grayscale(100%);
   }
   .button_links {
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     align-items: center;
     display: flex;
@@ -19,16 +19,21 @@
       color: #333;
       text-transform: uppercase;
       font-weight: 700;
+      margin: 15px;
       &:hover {
         text-decoration: none;
       }
     }
   }
-  .list_item img {
-    filter: grayscale(100%) contrast(100%);
-    transition: all 0.3s;
+  .list_item {
+    img {
+      filter: grayscale(100%) contrast(100%);
+      transition: all 0.3s;
+    }
     &:hover {
-      filter: unset;
+      img {
+        filter: unset;
+      }
     }
   }
   .number {
@@ -41,7 +46,9 @@
     border-radius: 50%;
     color: white;
     background-color: #333;
-    &:hover {
+  }
+  .description {
+    &:hover .number {
       background-color: red;
     }
   }

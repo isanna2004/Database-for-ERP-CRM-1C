@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    $('.unwrap').click(function() {
+$(document).ready(function () {
+    $('.unwrap').click(function () {
         $(this).addClass('active');
-        $('.active').next().slideToggle(500, function() {
+        $('.active').next().slideToggle(500, function () {
             if ($('.active').next().is(':hidden')) {
                 $('.unwrap.active').html('Развернуть');
             } else {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     });
 
 
-    $('.all_item').click(function() {
+    $('.all_item').click(function () {
         $('.hidden_item').removeClass('d-none');
         $('.all_item').removeClass('d-md-none');
         $('.all_item').addClass('d-none');
@@ -21,21 +21,21 @@ $(document).ready(function() {
 
 
 
-    $('.steps .item_features').mouseenter(function() {
+    $('.steps .item_features').mouseenter(function () {
         $('.hide').show(800);
     });
-    $('.hide').hover(function() {
+    $('.hide').hover(function () {
         $('.hide').show();
     });
-    $('.steps .item_features').mouseleave(function() {
+    $('.steps .item_features').mouseleave(function () {
         $('.hide').hide();
     });
-    $('.hide').mouseleave(function() {
+    $('.hide').mouseleave(function () {
         $('.hide').hide();
     });
 
 
-    $('.steps .item_features').click(function() {
+    $('.steps .item_features').click(function () {
         $('.hide-mobile').hide(800);
         $(this).addClass('active');
         if ($('.active .hide-mobile').is(':hidden')) {
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 
 
-    $('.menu_buttons').click(function() {
+    $('.menu_buttons').click(function () {
         $('.hide-menu').slideToggle(500)
     })
 })

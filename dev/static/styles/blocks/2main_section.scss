@@ -7,6 +7,10 @@
     top: -250px;
     left: -100px;
   }
+  .bold-text{
+   font-family: 'Museo Sans Cyrl 900';
+   font-size: 20px;
+  }
   .text {
     position: relative;
   }
@@ -42,17 +46,8 @@
     &:hover {
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
       background-color: white;
-      &::after {
-        display: block;
-        content: " ";
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: #fe5c2e;
-        position: absolute;
-        top: 45px;
-        left: 75px;
-      }
+      
     }
   }
+ 
 }
