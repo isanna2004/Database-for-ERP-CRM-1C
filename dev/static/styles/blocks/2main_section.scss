@@ -7,9 +7,9 @@
     top: -250px;
     left: -100px;
   }
-  .bold-text{
-   font-family: 'Museo Sans Cyrl 900';
-   font-size: 20px;
+  .bold-text {
+    font-family: "Museo Sans Cyrl 900";
+    font-size: 20px;
   }
   .text {
     position: relative;
@@ -18,10 +18,16 @@
     font-size: 54px;
     padding: 80px 40px 30px 0px;
   }
+  @media (max-width: 1056px) {
+    .title {
+      padding: 20px;
+    }
+  }
   .descr {
     font-size: 20px;
     font-weight: 100;
-    width: 80%;
+
+
   }
   .shadowed {
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.05);
@@ -46,8 +52,6 @@
     &:hover {
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
       background-color: white;
-      
     }
   }
- 
 }
