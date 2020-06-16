@@ -23,13 +23,16 @@ body {
 }
 
 section {
-  padding: 40px 0;
+  padding: 30px 0;
   text-align: center;
 }
-
+.text {
+   font-weight: 600;
+   font-size: 20px;
+  }
 @media (max-width: 1200px) {
   section {
-    padding: 0;
+    padding: 20px;
   }
 
   .description {
@@ -39,12 +42,10 @@ section {
   .subtitle {
     padding: 0;
   }
-
-  .title {
-    font-size: 20px;
-    padding: 20px;
- 
-  }
+.title{
+  font-size: 20px;
+  padding: 0;
+}
   .photo{
       width: 155px;
   }
@@ -62,7 +63,7 @@ section {
 
 .title {
   font-size: 43px;
-  padding: 40px;
+  padding: 30px;
   font-family: "Museo Sans Cyrl 700";
 }
 
@@ -120,6 +121,10 @@ section {
   color: grey;
   margin-left: 5px;
 }
+ .modal{
+   min-width: 320px;
+     max-width: 80%;
+    }
 
 @import "blocks/_blocks";
 // Responsive styles

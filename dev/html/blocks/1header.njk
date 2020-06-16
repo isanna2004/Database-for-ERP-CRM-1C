@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="row align-items-center flex-wrap justify-content-center">
-            <div class="col-2 order-2  d-block d-md-none">
+            <div class="col-1 order-2  d-block d-md-none">
                 <a class="menu_buttons" href="#"><img src="../../static/images/menu-mobile.png" alt="menu"></a>
             </div>
             <div class="hide-menu order-6 d-md-none">{% include "blocks/navigation.njk" %}</div>
@@ -11,11 +11,12 @@
             <div class="col-12 col-md-2 text-nowrap order-md-2 order-1 text-right text-md-center">
                 <a href="#" class="phone text-dark">+7 (495) 380-37-74</a>
             </div>
-            <div class="col-4 col-lg-2 text-nowrap order-md-3 order-3">{% include "templates/socials.njk" %}</div>
+            <div class="col-5 col-lg-2 text-nowrap order-md-3 order-3">
+                {% include "templates/socials.njk" %}</div>
 
             <div class="col-2 order-5 d-block d-md-none">
-                <a class="nav-link" href="#"><img src="../../static/images/lupa.png" alt="loupe"></a>
-            </div>
+                <button type="button" class="btn" data-toggle="modal" data-target=".modal"><img src="../../static/images/lupa.png" alt="loupe"></button>
+            </div>{% include "templates/modal.njk" %}
         </div>
     </div>
 </header>

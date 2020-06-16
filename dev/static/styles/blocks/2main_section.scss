@@ -11,9 +11,7 @@
     font-family: "Museo Sans Cyrl 900";
     font-size: 20px;
   }
-  .text {
-    position: relative;
-  }
+  
   .title {
     font-size: 54px;
     padding: 80px 40px 30px 0px;
@@ -23,15 +21,15 @@
       padding: 20px;
     }
   }
+  
   .descr {
     font-size: 20px;
     font-weight: 100;
-
-
   }
   .shadowed {
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.05);
     background: linear-gradient(to bottom, white, #fafafa);
+  
   }
   .about-us {
     display: flex;
@@ -54,4 +52,7 @@
       background-color: white;
     }
   }
+ @media (max-width: 770px) {
+
+ }
 }

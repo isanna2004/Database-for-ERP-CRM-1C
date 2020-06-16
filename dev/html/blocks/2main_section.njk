@@ -5,8 +5,8 @@
             <div class="col-10 d-md-block d-none">
                 {% include "blocks/navigation.njk" %}
             </div>
-            <div class="col-2 d-md-block d-none">
-                <a class="nav-link" href="#"><img src="../../static/images/lupa.png" alt="loupe"></a>
+            <div class="col-2 d-md-block d-none"><button type="button" class="btn" data-toggle="modal" data-target=".modal"><img src="../../static/images/lupa.png" alt="loupe"></button>
+                  {% include "templates/modal.njk" %}
             </div>
             <div class="col-12 col-lg-9 order-1">
                 <h1 class="title">

@@ -1,34 +1,32 @@
-'use strict';
+"use strict";
 /*
  * HRE IS BUILD SYSTEM SETTINGS
  */
 
 // Gulp instruments
-const { src, dest, series, parallel, watch } = require('gulp');
+const { src, dest, series, parallel, watch } = require("gulp");
 // Nunjucks compiler
-const nunjucks                   = require('gulp-nunjucks');
+const nunjucks = require("gulp-nunjucks");
 // Sass | SCSS compiler
-const sass                       = require('gulp-sass');
-sass.compiler                    = require('node-sass');
+const sass = require("gulp-sass");
+sass.compiler = require("node-sass");
 // Server Browsersync
-const browserSync                = require('browser-sync').create();
+const browserSync = require("browser-sync").create();
 // HELPERS
-const rename                     = require("gulp-rename");
-const concat                     = require('gulp-concat');
-const del                        = require('del');
+const rename = require("gulp-rename");
+const concat = require("gulp-concat");
+const del = require("del");
 
 // ------------------------------------------
 // Work With HTML
 // ------------------------------------------
 
 function html() {
-
-  return src('dev/html/*.njk')
+  return src("dev/html/*.njk")
     .pipe(nunjucks.compile())
-    .pipe(rename({ extname: '.html' }))
-    .pipe(dest('build'))
-    .on('end', browserSync.reload);
-
+    .pipe(rename({ extname: ".html" }))
+    .pipe(dest("build"))
+    .on("end", browserSync.reload);
 }
 
 // ------------------------------------------
@@ -36,10 +34,9 @@ function html() {
 // ------------------------------------------
 
 function css() {
-
-  return src('dev/static/styles/main.scss')
+  return src("dev/static/styles/main.scss")
     .pipe(sass())
-    .pipe(dest('build/static/css'))
+    .pipe(dest("build/static/css"))
     .pipe(browserSync.stream());
 }
 
@@ -48,23 +45,19 @@ function css() {
 // ------------------------------------------
 
 function jsLibs(cb) {
-
   const libs = [
-    "node_modules/jquery/dist/jquery.min.js"
+    "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
   ];
-
   if (!libs.length) return cb();
 
-  return src(libs)
-    .pipe(concat('libs.min.js'))
-    .pipe(dest('build/static/js'));
+  return src(libs).pipe(concat("libs.min.js")).pipe(dest("build/static/js"));
 }
 
 function js() {
-
-  return src('dev/static/js/*')
-    .pipe(dest('build/static/js'))
-    .on('end', browserSync.reload);;
+  return src("dev/static/js/*")
+    .pipe(dest("build/static/js"))
+    .on("end", browserSync.reload);
 }
 
 // ------------------------------------------
@@ -72,9 +65,7 @@ function js() {
 // ------------------------------------------
 
 function images() {
-
-  return src('dev/static/images/**/*')
-    .pipe(dest('build/static/images'));
+  return src("dev/static/images/**/*").pipe(dest("build/static/images"));
 }
 
 // ------------------------------------------
@@ -82,26 +73,21 @@ function images() {
 // ------------------------------------------
 
 function assets() {
-
-  return src('dev/static/assets/**/*')
-    .pipe(dest('build/static'));
+  return src("dev/static/assets/**/*").pipe(dest("build/static"));
 }
 
-function copy(from, to = '') {
-  return src(from).pipe(dest('build/static' + to));
+function copy(from, to = "") {
+  return src(from).pipe(dest("build/static" + to));
 }
 
 function copyFiles(cb) {
-
   const sources = [
     // { from: '', to: '' }
   ];
 
   if (!sources.length) return cb();
 
-  return parallel(
-    sources.map(source => copy(source.from, source.to))
-  );
+  return parallel(sources.map((source) => copy(source.from, source.to)));
 }
 
 // ------------------------------------------
@@ -109,8 +95,7 @@ function copyFiles(cb) {
 // ------------------------------------------
 
 function fonts() {
-  return src('dev/static/fonts/*')
-    .pipe(dest('build/static/fonts'));
+  return src("dev/static/fonts/*").pipe(dest("build/static/fonts"));
 }
 
 // ------------------------------------------
@@ -131,27 +116,34 @@ function serve() {
 // ------------------------------------------
 function watchFiles() {
   // html
-  watch('dev/html/**/*', series(html));
+  watch("dev/html/**/*", series(html));
   // styles
-  watch('dev/static/styles/**/*', series(css));
+  watch("dev/static/styles/**/*", series(css));
   // images
-  watch('dev/static/images/**/*.{png,jpg,gif,svg}', series(images));
+  watch("dev/static/images/**/*.{png,jpg,gif,svg}", series(images));
   // js
-  watch('dev/static/js/**/*', series(js));
+  watch("dev/static/js/**/*", series(js));
 }
 
 // clean build folder
 function clean() {
-  return del('build');
+  return del("build");
 }
 
 // EXPORT TASKS
-exports.html          = html;
-exports.css           = css;
-exports.js            = js;
-exports.jsLibs        = jsLibs;
-exports.watchFiles    = watchFiles;
-exports.serve         = serve;
+exports.html = html;
+exports.css = css;
+exports.js = js;
+exports.jsLibs = jsLibs;
+exports.watchFiles = watchFiles;
+exports.serve = serve;
 
-exports.default       = series(clean, parallel(html, css, js, jsLibs, copyFiles, assets, fonts, images), parallel(serve, watchFiles));
-exports.build         = series(clean, parallel(html, css, js, jsLibs, copyFiles, assets, fonts, images));
+exports.default = series(
+  clean,
+  parallel(html, css, js, jsLibs, copyFiles, assets, fonts, images),
+  parallel(serve, watchFiles)
+);
+exports.build = series(
+  clean,
+  parallel(html, css, js, jsLibs, copyFiles, assets, fonts, images)
+);

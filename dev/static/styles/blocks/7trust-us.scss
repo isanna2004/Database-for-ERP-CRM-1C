@@ -30,4 +30,10 @@
       padding-top: 0;
     }
   }
+  .thumbnail{
+    &:hover{
+      filter:grayscale(0) invert(100%);
+    
+    }
+  }
 }
