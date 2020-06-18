@@ -1,11 +1,7 @@
 # Создание Landing Page
+Данная страница представляет собой лэндинг компании, занимающейся предоставлением услуг Баз Данных для ERP CRM 1C.
 
-
-
-<p></p>
-
-<h3>Что использовали:</h3>
-
+<h3>Для ее создания использовались:</h3>
 <ul>
 	<li><a href="http://fontweb.ru" target="_blank">fontweb.ru</a> - Шрифты для веб-дизайна и верстки</li>
 	<li><a href="http://getbootstrap.com" target="_blank">getbootstrap.com</a> - Адаптивная сетка</li>
