@@ -6,12 +6,11 @@
     height: 25vw;
     border: 5vw solid #f4f4f4;
     top: 60%;
-    left:0;
-
+    left: 0;
   }
-  .left{
-    top:-20%;
-    left:70%;
+  .left {
+    top: -20%;
+    left: 70%;
     width: 35vw;
     height: 35vw;
     border: 10vw solid #f4f4f4;
@@ -27,12 +26,13 @@
     font-size: 17px;
     font-weight: 700;
     padding-left: 0;
+    padding-top: 0;
     text-transform: capitalize;
   }
   .unwrap {
     display: block;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 20px;
     color: red;
   }
@@ -40,14 +40,16 @@
 
 .item_features {
   position: relative;
-  padding: 20px;
+  padding: 40px 20px;
   background-color: white;
   text-align: left;
+
   .icon {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 30px;
+    right: 50px;
   }
+
   .task_solving {
     font-size: 14px;
     color: grey;

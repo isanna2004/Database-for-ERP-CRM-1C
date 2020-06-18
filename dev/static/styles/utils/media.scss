@@ -1,0 +1,76 @@
+@media (max-width: 1200px) {
+  section {
+    padding: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    padding-bottom: 0;
+  }
+  .title {
+    font-size: 30px;
+    padding: 0;
+  }
+  .photo {
+    width: 155px;
+  }
+  .steps {
+    .hide {
+      left: 113px;
+      bottom: -145px;
+    }
+    .item_features {
+      min-width: 170px;
+    }
+  }
+
+  .results {
+    .item_features {
+      .subtitle {
+        padding-top: 30px;
+        text-align: center;
+      }
+      .icon {
+        top: 20px;
+        right: 48%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1056px) {
+  .our_systems {
+    .thumbnail {
+      height: 20px;
+      width: 70px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main_reasons {
+    img {
+      width: 80px;
+    }
+  }
+}
+@media (max-width: 1224px) {
+  .trust_us {
+    .thumbnail {
+      height: 20px;
+      width: 70px;
+    }
+    .title {
+      padding-top: 100px;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .trust_us {
+    .title {
+      padding-top: 0;
+    }
+  }
+}

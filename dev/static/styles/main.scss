@@ -27,28 +27,8 @@ section {
   text-align: center;
 }
 .text {
-   font-weight: 600;
-   font-size: 20px;
-  }
-@media (max-width: 1200px) {
-  section {
-    padding: 20px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
-  .subtitle {
-    padding: 0;
-  }
-.title{
+  font-weight: 600;
   font-size: 20px;
-  padding: 0;
-}
-  .photo{
-      width: 155px;
-  }
 }
 
 .circle {
@@ -113,18 +93,25 @@ section {
   filter: grayscale(100%);
 }
 
-.color {
-  filter: grayscale(0%);
-}
-
 .fa {
   color: grey;
   margin-left: 5px;
+  &:hover{
+    color:#fe5c2e;
+  }
 }
- .modal{
-   min-width: 320px;
-     max-width: 80%;
-    }
+.modal {
+  min-width: 320px;
+  max-width: 80%;
+}
+.thumb {
+  height: 20px;
+  width: 60px;
+  filter: grayscale(100%);
+}
+.color {
+  filter: grayscale(0%);
+}
 
 @import "blocks/_blocks";
 // Responsive styles

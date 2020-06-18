@@ -15,25 +15,9 @@
     text-decoration: underline;
   }
 
-  @media (max-width: 1224px) {
-    .thumbnail {
-      height: 20px;
-      width: 70px;
-    }
-    .title {
-      padding-top: 100px;
-    }
-  }
-
-  @media (max-width: 990px) {
-    .title {
-      padding-top: 0;
-    }
-  }
-  .thumbnail{
-    &:hover{
-      filter:grayscale(0) invert(100%);
-    
+  .thumbnail {
+    &:hover {
+      filter: grayscale(0) invert(100%);
     }
   }
 }

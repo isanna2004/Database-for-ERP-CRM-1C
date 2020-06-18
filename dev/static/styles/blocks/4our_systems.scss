@@ -1,11 +1,7 @@
 .our_systems {
   position: relative;
-  .thumb {
-    height: 20px;
-    width: 60px;
-    filter: grayscale(100%);
-  }
-  .subtitle{
+ 
+  .subtitle {
     font-size: 20px;
   }
   .button_links {
@@ -56,14 +52,9 @@
       background-color: red;
     }
   }
-  @media (max-width: 1056px) {
-    .thumbnail {
-      height: 20px;
-      width: 70px;
-    }
-  }
-  .button_style{
-    &:hover{
+
+  .button_style {
+    &:hover {
       background: lightgray;
     }
   }

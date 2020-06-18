@@ -4,9 +4,9 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.active').next().slideToggle(500, function () {
             if ($('.active').next().is(':hidden')) {
-                $('.unwrap.active').html('Развернуть');
+                $(".unwrap.active").html("Развернуть ˅");
             } else {
-                $('.unwrap.active').html('Cвернуть');
+                $('.unwrap.active').html('Cвернуть ^');
             };
             $('.active').removeClass('active');
         });
